@@ -1,0 +1,44 @@
+
+body{
+  font-family: 'Abel', sans-serif;
+  style:none;
+  /* background-color: red; */
+}
+h1{
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 1000px;
+}
+nav{
+  position: fixed;
+  top: 60px;
+  left: 60px;
+  padding: 20px;
+  padding-right: 40px;
+}
+nav img{
+  padding-left: 40px;
+}
+
+.hide{
+  height:0;
+  color:rgba(0, 0, 0, 0);
+}
+li{
+  padding-right: 10px;
+  padding-bottom: 4px;
+  list-style-type: none;
+  animation-name: "wa";
+  animation-duration: 500ms;
+}
+@keyframes wa {
+  0%{
+    color: rgba(0, 0, 0, 0);
+  }
+  80%{
+    color: rgba(0, 0, 0, 0);
+  }
+  100%{
+    color: rgba(0, 0, 0, 0);
+  }
+}
