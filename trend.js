@@ -22,7 +22,7 @@ navclick.addEventListener("mouseover", function( event ) {
  })
 
 // mouseout the button to hide the list;
- navclick.addEventListener("mouseout", function( e1 ) {
+ navbar.addEventListener("mouseout", function( e1 ) {
     navclickbar.classList.add("hide");
     navbar.classList.remove("tranbackground");
 })
