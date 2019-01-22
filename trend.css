@@ -17,28 +17,36 @@ nav{
   padding-right: 40px;
 }
 nav img{
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 .hide{
   height:0;
   color:rgba(0, 0, 0, 0);
 }
+
 li{
+  margin-left: -30px;
   padding-right: 10px;
   padding-bottom: 4px;
   list-style-type: none;
-  animation-name: "wa";
-  animation-duration: 500ms;
 }
-@keyframes wa {
+.tranbackground{
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.ea{
+  animation-name: "ea1";
+  animation-duration: 2s;
+}
+
+  @keyframes ea1 {
   0%{
-    color: rgba(0, 0, 0, 0);
+    top: 200px;
+    color:rgba(0, 0, 0, 0);
   }
   80%{
-    color: rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 0.3);
   }
   100%{
-    color: rgba(0, 0, 0, 0);
+    color:rgba(0, 0, 0, 1);
   }
-}
