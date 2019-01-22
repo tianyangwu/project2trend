@@ -3,24 +3,25 @@ font-family: 'Abel', sans-serif; */
 
 body{
   font-family: 'Julius Sans One', sans-serif;
-  style:none;
+  /* style:none; */
   /* testing: */
   /* background-color: red; */
 }
 h1{
   text-align: center;
-  font-size: 60px;
+  font-size: 50px;
   padding-bottom: 1000px;
   font-family: 'Julius Sans One', sans-serif;
   padding-top: 20px;
 }
 nav{
   position: fixed;
-  top: 60px;
+  top: 40px;
   left: 60px;
   padding: 20px;
   padding-right: 40px;
 }
+
 nav img{
   padding-left: 10px;
 }
@@ -32,7 +33,7 @@ nav img{
 
 li{
   margin-left: -30px;
-  padding-right: 10px;
+  padding-right: 12px;
   padding-bottom: 8px;
   list-style-type: none;
 }
@@ -46,7 +47,7 @@ li{
   animation-duration: 1s;
 }
 
-  @keyframes ea1 {
+@keyframes ea1 {
   0%{
     padding-top: 60px;
     color:rgba(0, 0, 0, 0);
@@ -58,4 +59,43 @@ li{
     padding-top: 20px;
     color:rgba(0, 0, 0, 1);
   }
+}
+
+.moveleft{
+  -webkit-animation-name:"mole";
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-name:"mole";
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes mole {
+  0%{
+    color:rgba(0, 0, 0, 1);
+    padding-left: 100px;
+  }
+  80%{
+    color:rgba(0, 0, 0, 0.3);
+    padding-left: 50px;
+  }
+  0%{
+    color:rgba(0, 0, 0, 0);
+    padding-left: 0px;
+    }
+}
+
+@keyframes mole {
+  0%{
+    color:rgba(0, 0, 0, 1);
+    padding-left: 100px;
+  }
+  80%{
+    color:rgba(0, 0, 0, 0.3);
+    padding-left: 50px;
+  }
+  0%{
+    color:rgba(0, 0, 0, 0);
+    padding-left: 0px;
+    }
 }
