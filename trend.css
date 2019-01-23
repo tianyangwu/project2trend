@@ -20,14 +20,15 @@ nav{
   left: 60px;
   padding: 20px;
   padding-right: 40px;
+  /* background-color: white; */
 }
 
 nav img{
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .hide{
-  height:0;
+  display: none;
   color:rgba(0, 0, 0, 0);
 }
 
@@ -37,27 +38,29 @@ li{
   padding-bottom: 8px;
   list-style-type: none;
 }
-
+li:hover{
+  color:rgb(139,0,0);
+}
 .tranbackground{
   background-color: rgba(255, 255, 255, 0.3);
 }
 
 .ea{
-  animation-name: "ea1";
-  animation-duration: 1s;
+  -webkit-animation-name: "ea1";
+  -webkit-animation-duration: 1s;
 }
 
-@keyframes ea1 {
+@-webkit-keyframes ea1 {
   0%{
     padding-top: 60px;
-    color:rgba(0, 0, 0, 0);
+    opacity: 0;
   }
-  80%{
-    color:rgba(0, 0, 0, 0.3);
+  30%{
+    opacity: 0.5;
   }
   100%{
     padding-top: 20px;
-    color:rgba(0, 0, 0, 1);
+    opacity: 1;
   }
 }
 
@@ -65,9 +68,9 @@ li{
   -webkit-animation-name:"mole";
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-name:"mole";
+  /* animation-name:"mole";
   animation-duration: 1s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 
 @-webkit-keyframes mole {
@@ -85,7 +88,10 @@ li{
     }
 }
 
-@keyframes mole {
+
+
+
+/* @keyframes mole {
   0%{
     color:rgba(0, 0, 0, 1);
     padding-left: 100px;
@@ -98,4 +104,4 @@ li{
     color:rgba(0, 0, 0, 0);
     padding-left: 0px;
     }
-}
+} */

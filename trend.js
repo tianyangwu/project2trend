@@ -17,20 +17,22 @@ navclick.onclick=reveal;
 
 
 // mouseover the button to show the list;
-navclick.addEventListener("mouseover", function( event ) {
+navbar.addEventListener("mouseover", function( event ) {
    navclickbar.classList.remove("hide");
    navclickbar.classList.add("moveleft");
    navbar.classList.add("tranbackground");
-   console.log("working");
-
+   // console.log("working");
  })
 
+
+
+
 // mouseover the button to show the list;
-navbar.addEventListener("mouseover", function( event ) {
-
-  console.log("hovering over navbar");
-
-})
+// navbar.addEventListener("mouseover", function( event ) {
+//
+//   console.log("hovering over navbar");
+//
+// })
 
 // navbar.addEventListener("mouseout", function( event ) {
 //
